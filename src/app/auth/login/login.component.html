@@ -1,1 +1,19 @@
-<p>login works!</p>
+        <div class="card col-md-4 mx-auto mt-5">
+            <div class="card-body">
+                <h3 class="text-center">Iniciar sesión</h3>
+                <form class="form-group mt-4">
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico: </label>
+                        <input type="email" class="form-control" formControlName="correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" class="form-control" formControlName="contrasena">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary my-2 my-sm-0 btn-lg btn-block">Comenzar!</button>
+                </form>
+                <div class="form-group mt-3">
+                    <p> ¿No tienes cuenta? <a [routerLink]="['/register']">Registrate!</a></p>
+                </div>
+            </div>
+        </div>
